@@ -1,0 +1,234 @@
+<!-- Question 2: Exploring the Power of Bootstrap Grid Containers -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bike Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Task 1: Header and Intro Section -->
+    <header id="home" style="background-image: url('images/bicycle.png');" class="img-fluid py-5" alt="Bicycle">
+        <div class="text-center pt-5 pb-2"><h1 class="display-1" style="text-shadow: 2px 2px 5px white;">The Bike Shop</h1></div>
+        <div class="text-center pb-5"><h3 class="display-6"  style="text-shadow: 1px 1px 5px rgb(145, 125, 201);">Welcome to The Bike Shop, <br>where you can buy and rent bikes!</h3></div>  
+    </header>
+    
+    <!-- Task 2: Featurette Section -->
+    <section class="container my5" id="service">
+        <h3 class="text-center mb-4 mt-5">Our Bike Solutions</h3>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="images/bike_shop.jpg" style="width: 300px; height: auto;" alt="Bikes For Sale" class="border border-dark rounded">
+                    <h4 class="mt-3">Bikes For Sale</h4>
+                    <p>We have a large selection of bicycles and the bike gear! If you are looking for a new or used bike, look no further, we have what you are looking for!</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="images/bike_rental.jpg" style="width: 300px; height: auto;" alt="Bike Rental" class="border border-dark rounded">
+                    <h4 class="mt-3">Bikes For Rent</h4>
+                    <p>We have a large selection of bicycles for rent! If you are looking for a bike to rent, we have just what you need!</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <img src="images/bike_repair.jpg" style="width: 300px; height: auto;" alt="Bike Repair" class="border border-dark rounded">
+                    <h4 class="mt-3">Bike Repair</h4>
+                    <p>If you need to get your bike repaired, we have bike technicians on site ready to help! Everything from airing up your tire to a full body repair, we can take care of what you need!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 3: About Section with Sidebar -->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 px-0 bg-light">
+                <div class="d-flex flex-column align-items-center px-3 pt-2 text-black min-vh-100">
+                    <a href="#about-us" class="d-flex align-items-center py-3 mb-md-0 me-md-auto text-black text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">The Bike Shop Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footer" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-us" class="nav-link px-0 align-middle">
+                                <li class="w-100"></i> <span class="d-none d-sm-inline">About Us</span> </a>
+                            <!-- <ul class="nav-link px-0" id="about-us" data-bs-parent="#menu"> -->
+                                <li class="w-100">
+                                    <a href="#team" class="nav-link px-0"> <span class="d-none d-sm-inline">Our Team</span></a>
+                                </li>
+                                <li>
+                                    <a href="#sales" class="nav-link px-0"> <span class="d-none d-sm-inline">Bikes For Sale</span></a>
+                                </li>
+                                <li class="w-100">
+                                    <a href="#rentals" class="nav-link px-0"> <span class="d-none d-sm-inline">Bikes For Rent</span></a>
+                                </li>
+                                <li>
+                                    <a href="#repairs" class="nav-link px-0"> <span class="d-none d-sm-inline">Bike Repair</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col py-3">
+                <!-- About Us -->
+                <section id="about-us" class="my-5">
+                    <h2 class="text-center mb-4">About Us</h2>
+                    <p class="text-left mx-5 mb-4">We are a full service bike sales, bike rental, and bike repair shop located in Hometown, USA. We supply and repair all types of bikes and bike gear. Bikes are our passion!</p>
+                </section>
+                <!-- Our Team -->
+                <section id="team" class="my-5">
+                    <h2 class="text-center mb-4">Our Team</h2>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <!-- Team Member 1 -->
+                        <div class="col">
+                            <img src="images/bike_shop_owner.jpg" style="width: 250px; height: auto;" alt="Team Member 1" class="border border-dark rounded">
+                            <div>
+                                <h5>Graham Bossman</h5>
+                                <p>Shop Owner</p>
+                            </div>
+                        </div>
+                            <!-- Team Member 2 -->
+                        <div class="col">
+                            <img src="images/bike_shop_manager.jpeg" style="width: 250px; height: auto;" alt="Team Member 2" class="border border-dark rounded">
+                            <div>
+                                <h5>Francy Smith</h5>
+                                <p>Shop Manager</p>
+                            </div>
+                        </div>
+                        <!-- Team Member 1 -->
+                        <div class="col">
+                            <img src="images/repair_manager.jpg" style="width: 250px; height: auto;" alt="Team Member 3" class="border border-dark rounded">
+                            <div>
+                                <h5>Steve Fixman</h5>
+                                <p>Repair Shop Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Sales -->
+                <section id="sales" class="my-5">
+                    <h2 class="text-center mb-4">Bikes For Sale</h2>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <!-- Regular Bikes -->
+                        <div class="col">
+                            <img src="images/regular_bike.jpg" style="width: 250px; height: auto;" alt="Regular Bike" class="border border-dark rounded">
+                            <div>
+                                <h5>Regular Bikes</h5>
+                                <p>We have a large selection of everyday bikes!</p>
+                            </div>
+                        </div>
+                            <!-- Racing Bikes -->
+                        <div class="col">
+                            <img src="images/racing_bike.jpg" style="width: 250px; height: auto;" alt="Racing Bike" class="border border-dark rounded">
+                            <div>
+                                <h5>Racing Bikes</h5>
+                                <p>We have a large selection of racing bikes!</p>
+                            </div>
+                        </div>
+                        <!-- Mountain Bikes -->
+                        <div class="col">
+                            <img src="images/mountain_bike.jpg" style="width: 250px; height: auto;" alt="Mountain Bike" class="border border-dark rounded">
+                            <div>
+                                <h5>Mountain Bikes</h5>
+                                <p>We have a large selection of mountain bikes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Rentals -->
+                <section id="rentals" class="my-5">
+                    <h2 class="text-center mb-4">Bikes For Rent</h2>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <!-- Bike Rentals -->
+                        <div class="col-1">
+                            <img src="images/rentals.jpg" style="width: 400px; height: auto;" alt="Bikes For Rent" class="border border-dark rounded">
+                            <div>
+                                <h5>Bikes For Rent</h5>
+                                <p>We have a large selection of bikes for rent!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Repairs -->
+                <section id="repairs" class="my-5">
+                    <h2 class="text-center mb-4">Bike Repair</h2>
+                    <div class="row row-cols-1 row-cols-md-3">
+                        <!-- Bike Repairs -->
+                        <div class="col-1 col-md-8">
+                            <div>
+                                <img src="images/repairs.jpeg" style="width: 400px; height: auto;" alt="Bike Repair" class="border-dark rounded ">
+                            </div>
+                            <div>
+                                <h5>Bike Repair</h5>
+                                <p>Our repair shop can fix any bike issue you may have!</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task 4: Footer with Grid Layout -->
+    <footer class="container my5" id="footer">
+        <h3 class="text-center mb-4 mt-5">Contact</h3>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <h4 class="text-center">The Bike Shop</h4>
+                        <br><br>
+                    <h5 style="color: gray;">123456 Main Street <br>Hometown, USA <br>91119</h5>
+                    <br>
+                    <h5 style="color: gray;">(800) 123-456-7890</h5>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <h4 class="text-center">Follow us on Social Media!</h4>
+                        <br><br>
+                    <a style="color: gray;"href="https://www.facebook.com"><h5 class="text-center">Facebook</h5></a>
+                    <br>
+                    <a style="color: gray;"href="https://www.x.com"><h5 class="text-center">x</h5></a>
+                    <br>
+                    <a style="color: gray;"href="https://www.instagram.com"><h5 class="text-center">Instagram</h5></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="p-3">
+                    <form action="/action_page.php">
+                        <div class="mx-2"><h4 class="text-center">Newsletter Sign-Up</h4></div>
+                        <br>
+                        <div class="text-center mb-3">
+                            <label for="name">Name</label>
+                            <input class="col-6" type="text" id="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="text-center mb-3">
+                            <label for="email">Email</label>
+                            <input class="col-6"  type="email" id="email" placeholder="Enter Your Email">
+                        </div>
+                        <br><br>
+                        <button class="btn btn-secondary mx-3" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div><p>&copy; 2024 The Bike Shop. <small>All rights reserved.</small></p></div>
+        </div>
+    </footer>
+</body>
+</html>
